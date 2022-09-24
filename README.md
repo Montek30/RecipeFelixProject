@@ -1,4 +1,4 @@
-# VaccinationTracker
-A Full Stack Vaccine Tracker system using Flask/Python/Mysql/Bootstrap. 
+# recipee recommendation
+A Full Stack recipe app Flask/Python/Mysql/Bootstrap. 
 
 *************UNDER DEVELOPMENT******************
