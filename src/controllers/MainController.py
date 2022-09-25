@@ -11,3 +11,6 @@ def profile():
 
 def faq():
 	return render_template('faq.html')
+
+def recipe():
+    return render_template('recipe.html')
