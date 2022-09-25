@@ -20,7 +20,7 @@ app.register_blueprint(main_bp, url_prefix='/')
 app.register_blueprint(auth_bp, url_prefix='/auth')
 
 app.config['SECRET_KEY'] = '!@#montek@@!!'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@127.0.0.1:3306/mckinsey_felix_project'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Methane$$4@127.0.0.1:3306/mckinsey_felix_project'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db.init_app(app)
