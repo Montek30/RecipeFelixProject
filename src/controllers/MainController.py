@@ -9,5 +9,15 @@ def profile():
 	return render_template('profile_v2.html', name=current_user.name, id=current_user.id)
 	# return render_template('profile.html', name=current_user.name)
 
+
+@login_required
+def community():
+	return render_template('community.html')
+
+@login_required
+def recipe():
+	return render_template('recipe.html')
+
+
 def faq():
 	return render_template('faq.html')

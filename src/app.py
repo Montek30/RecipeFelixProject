@@ -1,11 +1,7 @@
 from flask import Flask, render_template
 from flask_login import LoginManager
 from routes.auth_bp import auth_bp
-from routes.vaccination_centre_bp import vaccination_centre_bp
 from routes.main_bp import main_bp
-from routes.vaccine_availability_bp import vaccine_availability_bp
-from routes.vaccine_bp import vaccine_bp
-from routes.vaccine_booking_bp import vaccine_booking_bp
 from settings import db, mail
 from models.Models import UserModel
 
@@ -21,11 +17,7 @@ app.config['MAIL_USE_SSL'] = True
 
 
 app.register_blueprint(main_bp, url_prefix='/')
-app.register_blueprint(vaccination_centre_bp, url_prefix='/vaccine_centre')
 app.register_blueprint(auth_bp, url_prefix='/auth')
-app.register_blueprint(vaccine_availability_bp, url_prefix='/vaccine_availability')
-app.register_blueprint(vaccine_bp, url_prefix='/vaccine')
-app.register_blueprint(vaccine_booking_bp, url_prefix='/vaccine_booking')
 
 app.config['SECRET_KEY'] = '!@#montek@@!!'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@127.0.0.1:3306/mckinsey_felix_project'
